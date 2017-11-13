@@ -1,0 +1,17 @@
+body{
+ 
+background-image: url("../Assests/back1.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+@media (min-width: 48em) {
+  .container {
+    max-width: 46rem;
+  }
+}
+.container-narrow > hr {
+  margin: 2rem 0;
+}
+
+
