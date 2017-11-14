@@ -5,7 +5,7 @@ var n = new Date();
  
 
 
-if(h<17&&h>6)
+if(h<18&&h>6)
 {
 document.getElementById("jumbo").style.backgroundImage = "url('Assests/day.jpg')";
 document.getElementById("jumbo").style.backgroundRepeat = "no-repeat";

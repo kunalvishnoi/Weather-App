@@ -13,5 +13,7 @@ background-size: cover;
 .container-narrow > hr {
   margin: 2rem 0;
 }
-
+.color{
+  color: #fff;
+}
 
