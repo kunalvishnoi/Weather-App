@@ -32,9 +32,30 @@ document.getElementById("jumbo").style.color="white";
                      x=(5*(x-32))/9;
                 var y=data.query.results.channel.wind.speed;  
                  var z=data.query.results.channel.atmosphere.humidity; 
+                 var a=data.query.results.channel.item.forecast;
+                      var hi=a[0].high;
+                        hi=(5*(hi-32))/9;
+                       var lo=a[0].low;
+                        lo=(5*(lo-32))/9;
+                      var  hi1=a[1].high;
+                         hi1=(5*(hi1-32))/9;
+                       var lo1=a[1].low;
+                        lo1=(5*(lo1-32))/9;
+                        document.getElementById("today").style.display="block";
+                        document.getElementById("tom").style.display="block";
                 document.getElementById("temp").innerHTML = 'Temperature:' +  Math.floor(x) + '&deg;'+'C';
                 document.getElementById("wind").innerHTML = 'Wind:' +  y +' mph';
                  document.getElementById("humidity").innerHTML = 'Humidity:' +  z +'%';
+                                  document.getElementById("high").innerHTML ='High:' + Math.floor(hi) +"&deg;C";
+                                   document.getElementById("text").innerHTML = a[0].text;
+                                   document.getElementById("low").innerHTML ='Low:' + Math.floor(lo) +"&deg;C";
+                            document.getElementById("high1").innerHTML ='High:' + Math.floor(hi1) +"&deg;C";
+                                   document.getElementById("text1").innerHTML = a[1].text;
+                                   document.getElementById("low1").innerHTML ='Low:' + Math.floor(lo1) +"&deg;C";
+
+                                   
+                                   
+                                    
 
               }
             } 
@@ -42,4 +63,7 @@ document.getElementById("jumbo").style.color="white";
             request.send();
             return false;
           }
-    
+    function my(){
+
+  location.reload();
+}
