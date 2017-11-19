@@ -43,6 +43,7 @@ document.getElementById("jumbo").style.color="white";
                         lo1=(5*(lo1-32))/9;
                         document.getElementById("today").style.display="block";
                         document.getElementById("tom").style.display="block";
+                        document.body.style.backgroundAttachment = "fixed";
                 document.getElementById("temp").innerHTML = 'Temperature:' +  Math.floor(x) + '&deg;'+'C';
                 document.getElementById("wind").innerHTML = 'Wind:' +  y +' mph';
                  document.getElementById("humidity").innerHTML = 'Humidity:' +  z +'%';
