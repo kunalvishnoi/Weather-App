@@ -7,10 +7,10 @@ var n = new Date();
 
 if(h<18&&h>6)
 {
-document.getElementById("jumbo").style.backgroundImage = "url('Assests/day.jpg')";
+document.getElementById("jumbo").style.backgroundImage = "url('Assests/day2.jpg')";
 document.getElementById("jumbo").style.backgroundRepeat = "no-repeat";
 document.getElementById("jumbo").style.backgroundSize = "cover";
-document.getElementById("jumbo").style.color="black;"
+document.getElementById("jumbo").style.color="white";
 }
 else{
   document.getElementById("jumbo").style.backgroundImage = "url('Assests/night.jpg')";
